@@ -13,7 +13,6 @@ $(document).ready(function() {
 		//Generate random number function & add it to html
 
 		randomNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-		console.log("The Random Number is: " + randomNumber);
 
 		$("#randomNumberId").html(randomNumber);
 	}
@@ -23,16 +22,12 @@ $(document).ready(function() {
 	function randomTeamValuesGenerator() {
 
 		patriotsNumber = Math.floor(Math.random() * 12) + 1;
-		console.log("The Green Diamond's value is: " + patriotsNumber);
 
 		chiefsNumber = Math.floor(Math.random() * 12) + 1;
-		console.log("The Red Diamond's value is: " + chiefsNumber);
 
 		cowboysNumber = Math.floor(Math.random() * 12) + 1;
-		console.log("The Yellow Diamond's value is: " + cowboysNumber);
 
 		ramsNumber = Math.floor(Math.random() * 12) + 1;
-		console.log("The Purple Diamond's value is: " + ramsNumber);
 	}
 
 	//Initial random numbers to start game
@@ -49,14 +44,12 @@ $(document).ready(function() {
 	//Add value on click, score conditions - Patriots
 	$("#patriotsLogo").on("click", function() {
 		yourScoreIs = yourScoreIs + patriotsNumber;
-		console.log(yourScoreIs);
 		$("#yourScore").html(yourScoreIs);
 
 		if (yourScoreIs === randomNumber) {
 			wins = wins + 1;
 			$("#wins").html("Wins: " + wins);
 			$("#message").html("YOU WIN");
-			console.log("YOU WIN");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -68,7 +61,6 @@ $(document).ready(function() {
 			losses = losses + 1;
 			$("#losses").html("Losses: " + losses);
 			$("#message").html("YOU LOSE");
-			console.log("YOU LOSE");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -80,14 +72,12 @@ $(document).ready(function() {
 	//Chiefs
 	$("#chiefsLogo").on("click", function() {
 		yourScoreIs = yourScoreIs + chiefsNumber;
-		console.log(yourScoreIs);
 		$("#yourScore").html(yourScoreIs);
 
 		if (yourScoreIs === randomNumber) {
 			wins = wins + 1;
 			$("#wins").html("Wins: " + wins);
 			$("#message").html("YOU WIN");
-			console.log("YOU WIN");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -100,7 +90,6 @@ $(document).ready(function() {
 			losses = losses + 1;
 			$("#losses").html("Losses: " + losses);
 			$("#message").html("YOU LOSE");
-			console.log("YOU LOSE");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -112,14 +101,12 @@ $(document).ready(function() {
 	//Cowboys
 	$("#cowboysLogo").on("click", function() {
 		yourScoreIs = yourScoreIs + cowboysNumber;
-		console.log(yourScoreIs);
 		$("#yourScore").html(yourScoreIs);
 
 		if (yourScoreIs === randomNumber) {
 			wins = wins + 1;
 			$("#wins").html("Wins: " + wins);
 			$("#message").html("YOU WIN");
-			console.log("YOU WIN");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -131,7 +118,6 @@ $(document).ready(function() {
 			losses = losses + 1;
 			$("#losses").html("Losses: " + losses);
 			$("#message").html("YOU LOSE");
-			console.log("YOU LOSE");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -143,14 +129,12 @@ $(document).ready(function() {
 	//Rams
 	$("#ramsLogo").on("click", function() {
 		yourScoreIs = yourScoreIs + ramsNumber;
-		console.log(yourScoreIs);
 		$("#yourScore").html(yourScoreIs);
 
 		if (yourScoreIs === randomNumber) {
 			wins = wins + 1;
 			$("#wins").html("Wins: " + wins);
 			$("#message").html("YOU WIN");
-			console.log("YOU WIN");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
@@ -162,7 +146,6 @@ $(document).ready(function() {
 			losses = losses + 1;
 			$("#losses").html("Losses: " + losses);
 			$("#message").html("YOU LOSE");
-			console.log("YOU LOSE");
 
 			randomNumberGenerator();
 			randomTeamValuesGenerator();
