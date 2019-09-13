@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Titillium+Web&display=swap" rel="stylesheet">
+
+
+	<title>NFL Over/Under Game</title>
+</head>
+<body>
+	<div class="jumbotron" id="heroImage">
+		<div class="container">
+
+			<h1>NFL Over/Under Game</h1>
+
+				<p>When you begin the game you will be assigned a random number.
+		  		   The goal is to match your score to that number without "hitting the over". 
+		   		   To add points to your score, click on one of the team logos below. Each team has a 
+		   		   different value to add to your score. Be careful! If you go past the random number amount, you will lose.
+				</p>
+		</div>
+	</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<!-- random number -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="rndmNumbCol">
+			<h2>Random Number</h2>
+			<p id="randomNumberId">###</p>
+		</div>
+
+		<!-- team logos -->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="buttnsCol">
+		
+			<div class="row">
+
+				<!-- Patriots -->
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<img src="assets/images/PatriotsLogo.png" alt="Patriots Logo" id="patriotsLogo" style="float: right; margin: 0px 0px 15px 15px;" width="100px">
+				</div>
+
+				<!-- Chiefs -->
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<img src="assets/images/ChiefsLogo.png" alt="Chiefs Logo" id="chiefsLogo" style="float: right; margin: 0px 0px 15px 15px;" width="100px">
+				</div>
+
+				<!-- Cowboys -->
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<img src="assets/images/CowboysLogo.png" alt="Cowboys Logo" id="cowboysLogo" style="float: right; margin: 0px 0px 15px 15px;" width="100px">
+				</div>
+				
+				<!-- Rams -->
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<img src="assets/images/RamsLogo.png" alt="Rams Logo" id="ramsLogo" style="float: right; margin: 0px 0px 15px 15px;" width="100px">
+				</div>
+
+			</div>
+		</div>
+
+		<!-- score -->
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="scoreCol">
+			<h2>Your Score Is</h2>
+			<p id="yourScore">0</p>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h3 id="message"></h3>
+		</div>
+	</div>
+
+
+	<!-- wins & losses -->
+	<div class="row" id="gameStats">
+
+		<div class="col-md-6">
+			<h2 id="wins">Wins: 0</h2>
+		</div>
+
+		<div class="col-md-6">
+			<h2 id="losses">Losses: 0</h2>
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<!-- reset -->
+		<div class="col-md-12" id="resetCol">
+			<button type="button" class="btn btn-default btn-lg" id="reset">RESET GAME</button>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

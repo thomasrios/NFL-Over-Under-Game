@@ -1,0 +1,99 @@
+body {
+    color: #ffffff;
+    background-color: #323232;
+    font-family: 'Titillium Web', sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+
+.jumbotron {
+    background-image: url("../images/background.jpg");
+    margin-bottom: 60px;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+	font-family: 'Black Ops One', cursive;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.jumbotron p {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#rndmNumbCol, #scoreCol, #buttnsCol {
+	height: 150px;
+	margin:auto;
+	text-align: center;
+	line-height: 150px;
+	border-radius: 5px;
+}
+
+.col-md-3 h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.col-md-3 p {
+	font-family: 'Black Ops One', cursive;
+	font-weight: 800;
+	font-size: 50px;
+	letter-spacing: 3px;
+	line-height: 140%;
+	color: #F76666;
+}
+
+#rndmNumbCol, #scoreCol {
+	background-color: #282828;
+}
+
+#buttnsCol {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#message {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 40px;
+	color: #6EEAE6;
+}
+
+#gameStats {
+	background-color: #E6E6E6;
+	color: #323232;
+	height: 75px;
+	margin-top: 30px;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Black Ops One', cursive;
+}
+
+#resetCol {
+	text-align: center;
+	margin-top: 60px;
+}
+
+#reset {
+	background-color: green;
+	border-color: white;
+	color: #ffffff;
+	padding-right: 40px;
+	padding-left: 40px;
+	letter-spacing: 1px;
+}
+
+#reset:hover {
+	background-color: rgb(0, 0, 0);
+	border-color: black;
+}
